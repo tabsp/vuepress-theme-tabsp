@@ -1,0 +1,26 @@
+{
+  "name": "vuepress-theme-tabsp",
+  "version": "beta-0.1.0",
+  "scripts": {
+    "release": "standard-version",
+    "pub": "git push --follow-tags origin master && npm publish"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/tabsp/vuepress-theme-tabsp.git",
+  "author": "tabsp <tabsp@qq.com> (https://tabsp.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tabsp/vuepress-theme-tabsp/issues"
+  },
+  "homepage": "https://github.com/tabsp/vuepress-theme-tabsp#readme",
+  "dependencies": {
+    "@vuepress/plugin-last-updated": "^1.1.0",
+    "@vuepress/plugin-register-components": "^1.0.0-rc.1",
+    "date-fns": "^2.3.0",
+    "moment": "^2.24.0",
+    "element-ui": "^2.12.0"
+  },
+  "devDependencies": {
+    "vuepress": "^1.1.0"
+  }
+}
