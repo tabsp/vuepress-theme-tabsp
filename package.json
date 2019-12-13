@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-tabsp",
-  "version": "beta-0.1.1",
+  "version": "v0.1.1",
   "scripts": {
     "release": "standard-version",
     "pub": "git push --follow-tags origin master && npm publish"
