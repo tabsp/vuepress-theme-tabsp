@@ -2,7 +2,7 @@
   <el-footer class="site-footer" height="70px">
     <ul class="site-footer_social-list">
       <li>
-        <a href="https://github.com/tabsp">
+        <a :href="$site.themeConfig.footer.gitHub">
           <svg
             t="1569827014061"
             class="icon"
@@ -22,7 +22,7 @@
       </li>
     </ul>
     <div>
-      © 2019 TABSP, All Rights Reserved. <el-link href="http://www.beian.miit.gov.cn" :underline="true">粤ICP备19124543号</el-link></div>
+      © 2019 TABSP, All Rights Reserved. <el-link v-if="$site.themeConfig.footer.beian.show" href="http://www.beian.miit.gov.cn" :underline="true">{{$site.themeConfig.footer.beian.number}}</el-link></div>
   </el-footer>
 </template>
 

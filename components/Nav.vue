@@ -1,7 +1,7 @@
 <template>
   <div class="nav" v-if="$site.themeConfig.nav">
     <ul class="nav-ul">
-      <li v-for="navItem in $site.themeConfig.nav">
+      <li v-for="navItem in $site.themeConfig.nav" :key="navItem.text">
         <router-link class="page-link" :to="navItem.link">{{ navItem.text }}</router-link>
       </li>
     </ul>

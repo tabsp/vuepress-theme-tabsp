@@ -19,12 +19,12 @@
         文章勘误可以直接到
         <a
           target="_blank"
-          :href="'https://github.com/tabsp/tabsp.github.io/blob/src/posts/'+$page.frontmatter.title+'.md'"
+          :href="$site.themeConfig.post.srcDir + $page.frontmatter.title + '.md'"
         >源代码地址</a>
         修改或者
         <a
           target="_blank"
-          href="https://github.com/tabsp/tabsp.github.io/issues/new"
+          :href="$site.themeConfig.post.newIssue"
         >提交 ISSUE</a>，感谢阅读！
       </div>
     </article>

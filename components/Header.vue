@@ -4,7 +4,7 @@
       <el-col :xs="20" :sm="12">
         <div class="site-title">
           <a href="/">
-            <Avatar />
+            <!-- <Avatar /> -->
             <h1>{{ $site.title }}</h1>
           </a>
         </div>
