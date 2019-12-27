@@ -1,14 +1,35 @@
 # Vuepress theme tabsp
 
+![NPM](https://img.shields.io/npm/l/vuepress-theme-tabsp)
+![npm](https://img.shields.io/npm/v/vuepress-theme-tabsp)
+
 Vuepress 博客主题，预览地址 [https://tabsp.com](https://tabsp.com)
-
-
 
 ## 使用教程
 
 Vuepress 文档参考 [https://vuepress.vuejs.org/zh/guide/](https://vuepress.vuejs.org/zh/guide/)
 
-Vuepress 配置文件参考：
+### 创建项目
+
+```
+# 创建博客文件夹
+mkdir my-blog && cd my-blog
+
+# 安装依赖
+yarn add -D vuepress # 或者：npm install -D vuepress
+yarn add vuepress-theme-tabsp # 或者：npm install -S vuepress-theme-tabsp
+
+# 创建 README.md
+echo '# Hello VuePress!' > README.md
+```
+
+### 配置项目
+
+```
+# 创建项目配置文件
+mkdir .vuepress && touch .vuepress/config.js
+```
+`.vuepress/config.js` 配置文件参考：
 
 ```
 module.exports = {
@@ -41,12 +62,31 @@ module.exports = {
   },
 }
 ```
-
-依赖引入：
+### 创建文章
 
 ```
-"vuepress-theme-tabsp": "^1.0.0"
+# 创建文章目录
+mkdir posts && touch posts/我的第一篇博客.md
 ```
+
+`posts/我的第一篇博客.md` 文件内容
+
+```
+---
+title: 我的第一篇博客
+date: 2019-12-27 16:58
+tags:
+  - hello
+  - vuepress
+---
+# 我的第一篇博客
+
+这是我的第一篇博客
+```
+
+### 预览
+
+`npx vuepress dev .`
 
 ## TODO
 
